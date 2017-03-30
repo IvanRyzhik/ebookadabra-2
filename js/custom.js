@@ -33,8 +33,10 @@ $('.top-menu li .scroller').click(function() {
 
 	$('.navbar-collapse.collapse.in').removeClass('in');
 
+	var that = this;
 	setTimeout(function() {
 		$('.top-menu li').removeClass('active');
+		$(that).parent('li').addClass('active');
 	}, 900);
 
 	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -52,9 +54,9 @@ $('.top-menu li .scroller').click(function() {
 
 
 //particles bubles effect
-particlesJS.load('particles-js', 'particlesjs-config.json', function() {
-	/*console.log('callback - particles.js config loaded');*/
-});
+/*particlesJS.load('particles-js', 'particlesjs-config.json', function() {
+
+});*/
 
 
 $('.single-item').slick({
@@ -98,12 +100,18 @@ $('.single-item').slick({
 });
 
 $('.single-item-2').slick({
-	slidesToShow: 3,
+	slidesToShow: 6,
 	arrows: false,
 	infinite: true,
 	dots: true,
 	adaptiveHeight: true, 
 	responsive: [
+	{
+		breakpoint: 1024,
+		settings: {
+			slidesToShow: 4
+		}
+	},
 	{
 		breakpoint: 768,
 		settings: {
