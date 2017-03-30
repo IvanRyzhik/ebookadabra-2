@@ -66,7 +66,7 @@ nav{
   font-size:15px;
 }
 .nav>li>a {
-  padding: 45px 15px;
+  padding: 45px 25px;
 }
 .title-container{
   margin-top: 100px;
@@ -93,7 +93,7 @@ nav{
 }
 .future-text h1 {
   margin-top: 0px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 .jumbotron h1{
   font-size: 56px;
@@ -370,6 +370,7 @@ div iframe {
   height: 100%;
   z-index: 10;
   cursor: pointer;
+  outline: none;
 }
 .slick-slide .filter {
   content: "";
@@ -379,6 +380,7 @@ div iframe {
   z-index: 1;
   width: 100%;
   top: 0;
+  border-radius: 6px;
 }
 .slick-slide img {
   width: 100%;
@@ -446,7 +448,7 @@ div iframe {
   display: block;
   color: #ffffff;
   font-family: 'vag_roundedlight';
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 300;
   line-height: 25px;
 }
@@ -993,6 +995,9 @@ h2{
 .jumbotron h1, .jumbotron p{
   color: #ffffff;
 }
+.jumbotron h1#video-s4{
+  color: #FFD138;
+}
 .benefits, .benefits li{
   text-align: left;
   font-family: 'Roboto', sans-serif;
@@ -1075,12 +1080,12 @@ h2{
 }
 
 
-@media only screen and (max-width: 1450px){
+/* @media only screen and (max-width: 1450px){
   .navbar-nav>li>a {
     font-size: 16px;
     padding: 45px 10px;
   }
-}
+} */
 @media only screen and (max-width: 1300px){
   .navbar-brand {
     padding: 0px 0px 0 10px;
@@ -1158,7 +1163,7 @@ h2{
     border-radius: 10px;
   }
   .menu-icons a {
-    padding: 15px !important;
+    padding: 5px 15px !important;
   }
   .navbar-right {
     float: none!important;
@@ -1386,6 +1391,10 @@ h2{
   }
   .single-item-2 .slick-dots {
     bottom: -60px;
+  }
+  #our-testimonial .slide-comp .align-center .client {
+    bottom: 5px;
+    left: 10px;
   }
 }
 @media only screen and (max-width : 640px) {
